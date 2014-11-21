@@ -23,9 +23,9 @@ public class Point
     double a=x*x+y*y;
     return Math.sqrt(a);
   }
-  public double distance (int t, int z)
+  public double distance (Point p)
   {
-    return Math.sqrt((x-t)*(x-t)+(y-z)*(y-z));
+    return Math.sqrt((x-p.x)*(x-p.x)+(y-p.y)*(y-p.y));
   }
   public void setX (int a)
   {
